@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-Commerce Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+    
+        <div class="logo">𝙎𝙃𝙊𝙋𝙈𝘼𝙏𝙀</div>
+        <div class="cart">
+            <button id="cart-btn">Cart (0)</button>
+        </div>
+    </header>
+
+    <!-- Product Listings -->
+    <main>
+        <div class="product-list">
+            <div class="product-item" data-id="1">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2021/10/SU/DA/IG/6745721/raymond-suit-500x500.jpg" alt="RAYMOND">
+                <h3>RAYMOND</h3>
+                <p>₹15,000.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="2">
+                <img src="https://img.tatacliq.com/images/i16//1348Wx2000H/MP000000016504109_1348Wx2000H_202403181810431.jpeg" alt="Product 2">
+                <h3>TITAN WATCHES</h3>
+                <p>₹5,000.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="3">
+                <img src="https://www.louisstitch.com/cdn/shop/files/LSRGPDCLBB_1_0015ea22-49ef-4ab0-8044-5947ba69487e.jpg?v=1742619497&width=1000" alt="Product 3">
+                <h3>LOUIS SHOES</h3>
+                <p>₹20,000.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="modal-content">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <p id="total-price">Total: $0.00</p>
+            <button id="checkout-btn">Checkout</button>
+            <button id="close-btn">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
